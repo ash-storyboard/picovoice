@@ -12,9 +12,9 @@ let package = Package(
             targets: ["Picovoice"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ash-storyboard/rhino/binding/ios/Package", from: "3.0.1"),
-        .package(url: "https://github.com/ash-storyboard/porcupine/binding/ios/Package", from: "3.0.1"),
-        .package(url: "https://github.com/ash-storyboard/ios-voice-processor/sdk/ios/Package", from: "1.1.0"),
+        .package(name: "Rhino", path: "../Rhino"),
+        .package(name: "Porcupine", path: "../Porcupine"),
+        .package(name: "ios-voice-processor", path: "../ios-voice-processor"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
